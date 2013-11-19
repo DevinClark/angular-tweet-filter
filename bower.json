@@ -1,5 +1,22 @@
 {
   "name": "angular-tweet-filter",
   "version": "1.0.0",
-  "main": "index.js"
+  "main": "index.js",
+  "homepage": "https://github.com/DevinClark/angular-tweet-filter",
+  "authors": [
+    "Devin Clark <dclarkdesign@gmail.com>"
+  ],
+  "description": "This is a simple collection of AngularJS filters to link a twitter username, link a hashtag, and properly format a full tweet.",
+  "keywords": [
+    "angular",
+    "twitter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
