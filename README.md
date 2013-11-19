@@ -5,9 +5,11 @@ This is a simple collection of AngularJS filters to link a twitter username, lin
 
 I used literals to make setup easier for me but you can plug a variable in the same way.
 
-    <div ng-bind-html="'@iDevinClark' | linkUsername"></div>
-    <div ng-bind-html="'#twitter' | linkHashtag"></div>
-    <div ng-bind-html="'ngBoilerplate v0.3.0 Released #AngularJS http://j.mp/15FRF4h  via @iDevinClark' | tweet"></div>
+```html
+<div ng-bind-html="'@iDevinClark' | linkUsername"></div>
+<div ng-bind-html="'#twitter' | linkHashtag"></div>
+<div ng-bind-html="'ngBoilerplate v0.3.0 Released #AngularJS http://j.mp/15FRF4h  via @iDevinClark' | tweet"></div>
+```
 
 `ng-bind-html` is necessary because if not it will render encode the HTML. If there is a way to do this without the dependency, I would love to hear about it. Open an issue and let me know.
 
