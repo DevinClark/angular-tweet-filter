@@ -15,9 +15,9 @@ angular.module('twitterFilters', ['ngSanitize'])
 			var twitterUserRegex = /@([a-zA-Z0-9_]{1,20})/g;
 			var twitterHashTagRegex = /\B#([a-z,A-Z,á,é,í,ó,ú,â,ê,ô,ã,õ,ç,Á,É,Í,Ó,Ú,Â,Ê,Ô,Ã,Õ,Ç,ü,ñ,Ü,Ñ]+)/g;
 
-			text = text.replace(urlRegex,"<a href='$&' target='_blank'>$&</a>");
-			text = text.replace(twitterUserRegex,"<a href='http://www.twitter.com/$1' target='_blank'>@$1</a>");
-			text = text.replace(twitterHashTagRegex,"<a href='http://twitter.com/search/%23$1' target='_blank'>#$1</a>");
+            text = text.replace(urlRegex,"<a class=\"url\" href='$&' target='_blank'>$&</a>");
+            text = text.replace(twitterUserRegex,"<a class=\"mention\" href='http://www.twitter.com/$1' target='_blank'>@$1</a>");
+            text = text.replace(twitterHashTagRegex,"<a class=\"hashtag\" href='http://twitter.com/search/%23$1' target='_blank'>#$1</a>");
 
 			return text;
 		};
